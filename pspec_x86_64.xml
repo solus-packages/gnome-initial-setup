@@ -1,0 +1,41 @@
+<PISI>
+    <Source>
+        <Name>gnome-initial-setup</Name>
+        <Packager>
+            <Name>Ikey Doherty</Name>
+            <Email>ikey@solus-project.com</Email>
+        </Packager>
+        <License>GPL-2.0</License>
+        <Summary xml:lang="en">GNOME Initial Setup</Summary>
+        <Description xml:lang="en">GNOME Initial Setup utility
+</Description>
+        <Archive type="binary" sha1sum="79eb0752a961b8e0d15c77d298c97498fbc89c5a">https://solus-project.com/sources/README.Solus</Archive>
+    </Source>
+    <Package>
+        <Name>gnome-initial-setup</Name>
+        <Summary xml:lang="en">GNOME Initial Setup</Summary>
+        <Description xml:lang="en">GNOME Initial Setup utility
+</Description>
+        <PartOf>desktop.gnome</PartOf>
+        <Files>
+            <Path fileType="library">/usr/lib64/gnome-initial-setup</Path>
+            <Path fileType="library">/usr/lib64/sysusers.d</Path>
+            <Path fileType="data">/usr/share/gnome-session</Path>
+            <Path fileType="localedata">/usr/share/locale</Path>
+            <Path fileType="data">/usr/share/gdm</Path>
+            <Path fileType="data">/usr/share/polkit-1</Path>
+            <Path fileType="data">/usr/share/gnome-shell</Path>
+            <Path fileType="data">/var/lib/gnome-initial-setup</Path>
+            <Path fileType="config">/etc/xdg/autostart</Path>
+        </Files>
+    </Package>
+    <History>
+        <Update release="1">
+            <Date>2015-12-01</Date>
+            <Version>3.18.0</Version>
+            <Comment>Packaging update</Comment>
+            <Name>Ikey Doherty</Name>
+            <Email>ikey@solus-project.com</Email>
+        </Update>
+    </History>
+</PISI>

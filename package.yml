@@ -1,0 +1,39 @@
+name       : gnome-initial-setup
+version    : 3.18.0
+release    : 1
+source     :
+    - http://ftp.gnome.org/pub/gnome/sources/gnome-initial-setup/3.18/gnome-initial-setup-3.18.0.tar.xz : 8fee9de41677c44318bb1c3bade2b6c9156698ad1a06e63aa1c15e3ab1bee729
+license    : GPL-2.0
+summary    : GNOME Initial Setup
+description: |
+    GNOME Initial Setup utility
+builddeps  :
+    - pkgconfig(gio-2.0)
+    - pkgconfig(iso-codes)
+    - pkgconfig(gtk+-3.0)
+    - pkgconfig(libnm-gtk)
+    - pkgconfig(accountsservice)
+    - pkgconfig(gnome-desktop-3.0)
+    - pkgconfig(gweather-3.0)
+    - pkgconfig(goa-backend-1.0)
+    - pkgconfig(geoclue-2.0)
+    - pkgconfig(rest-0.7)
+    - pkgconfig(libsecret-1)
+    - pkgconfig(pwquality)
+    - pkgconfig(webkit2gtk-4.0)
+    - pkgconfig(gdm)
+    - pkgconfig(json-glib-1.0)
+    - pkgconfig(ibus-1.0)
+    - pkgconfig(krb5)
+    - pkgconfig(com_err)
+setup      : |
+    # Note, in future when Cheese is fixed, add cheese-gtk to build deps
+    %patch -p1 < $pkgfiles/0001-keyboard-Fix-a-crash.patch
+    %configure
+build      : |
+    %make
+install    : |
+    %make_install
+    
+    install -D -m 00644 $pkgfiles/gnome-initial-setup.conf $installdir/%libdir%/sysusers.d/gnome-initial-setup.conf
+    mkdir -p ${installdir}/var/lib/gnome-initial-setup
