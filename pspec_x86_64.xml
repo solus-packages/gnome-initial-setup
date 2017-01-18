@@ -2,10 +2,11 @@
     <Source>
         <Name>gnome-initial-setup</Name>
         <Packager>
-            <Name>Ikey Doherty</Name>
-            <Email>ikey@solus-project.com</Email>
+            <Name>Peter O&apos;Connor</Name>
+            <Email>sunnyflunk@gmail.com</Email>
         </Packager>
         <License>GPL-2.0</License>
+        <PartOf>desktop.gnome</PartOf>
         <Summary xml:lang="en">GNOME Initial Setup</Summary>
         <Description xml:lang="en">GNOME Initial Setup utility
 </Description>
@@ -17,29 +18,30 @@
         <Description xml:lang="en">GNOME Initial Setup utility
 </Description>
         <PartOf>desktop.gnome</PartOf>
-        <RuntimeDependencies>
-            <Dependency>geoclue</Dependency>
-            <Dependency>libgnomekbd</Dependency>
-        </RuntimeDependencies>
         <Files>
-            <Path fileType="library">/usr/lib64/gnome-initial-setup</Path>
-            <Path fileType="library">/usr/lib64/sysusers.d</Path>
-            <Path fileType="data">/usr/share/gnome-session</Path>
+            <Path fileType="config">/etc/xdg/autostart/gnome-initial-setup-copy-worker.desktop</Path>
+            <Path fileType="config">/etc/xdg/autostart/gnome-initial-setup-first-login.desktop</Path>
+            <Path fileType="config">/etc/xdg/autostart/gnome-welcome-tour.desktop</Path>
+            <Path fileType="library">/usr/lib64/gnome-initial-setup/gnome-initial-setup</Path>
+            <Path fileType="library">/usr/lib64/gnome-initial-setup/gnome-initial-setup-copy-worker</Path>
+            <Path fileType="library">/usr/lib64/gnome-initial-setup/gnome-welcome-tour</Path>
+            <Path fileType="library">/usr/lib64/sysusers.d/gnome-initial-setup.conf</Path>
+            <Path fileType="data">/usr/share/gdm/greeter/applications/gnome-initial-setup.desktop</Path>
+            <Path fileType="data">/usr/share/gdm/greeter/applications/setup-shell.desktop</Path>
+            <Path fileType="data">/usr/share/gnome-session/sessions/gnome-initial-setup.session</Path>
+            <Path fileType="data">/usr/share/gnome-shell/modes/initial-setup.json</Path>
             <Path fileType="localedata">/usr/share/locale</Path>
-            <Path fileType="data">/usr/share/gdm</Path>
-            <Path fileType="data">/usr/share/polkit-1</Path>
-            <Path fileType="data">/usr/share/gnome-shell</Path>
+            <Path fileType="data">/usr/share/polkit-1/rules.d/20-gnome-initial-setup.rules</Path>
             <Path fileType="data">/var/lib/gnome-initial-setup</Path>
-            <Path fileType="config">/etc/xdg/autostart</Path>
         </Files>
     </Package>
     <History>
-        <Update release="5">
+        <Update release="6">
             <Date>2015-12-04</Date>
-            <Version>3.18.0</Version>
+            <Version>3.20.1</Version>
             <Comment>Packaging update</Comment>
-            <Name>Ikey Doherty</Name>
-            <Email>ikey@solus-project.com</Email>
+            <Name>Peter O&apos;Connor</Name>
+            <Email>sunnyflunk@gmail.com</Email>
         </Update>
     </History>
 </PISI>
