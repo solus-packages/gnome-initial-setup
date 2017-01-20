@@ -1,6 +1,6 @@
 name       : gnome-initial-setup
 version    : 3.20.1
-release    : 6
+release    : 7
 source     :
     - http://ftp.gnome.org/pub/gnome/sources/gnome-initial-setup/3.20/gnome-initial-setup-3.20.1.tar.xz : 225daf9ed08638a915740bc9bef2ff50843f53a9d51c3f730b00241f2ab6aa0c
 license    : GPL-2.0
@@ -11,6 +11,7 @@ description: |
 builddeps  :
     - pkgconfig(accountsservice)
     - pkgconfig(com_err)
+    - pkgconfig(dbus-glib-1)
     - pkgconfig(gdm)
     - pkgconfig(geoclue-2.0)
     - pkgconfig(gio-2.0)
