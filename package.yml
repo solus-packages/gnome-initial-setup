@@ -1,8 +1,8 @@
 name       : gnome-initial-setup
-version    : 3.22.1
-release    : 10
+version    : 3.24.0
+release    : 11
 source     :
-    - http://ftp.gnome.org/pub/gnome/sources/gnome-initial-setup/3.22/gnome-initial-setup-3.22.1.tar.xz : 56a663d84ab16854afbdd5ea852f0b76bb5e30829f14f3a224ea130c14825468
+    - http://ftp.acc.umu.se/pub/gnome/sources/gnome-initial-setup/3.24/gnome-initial-setup-3.24.0.tar.xz : c66fadfb5ec8febaecbd81d6bf976cbf9557e9f65efd4d8e59ef712700bae554
 license    : GPL-2.0
 component  : desktop.gnome
 summary    : GNOME Initial Setup
