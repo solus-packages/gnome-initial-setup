@@ -1,6 +1,6 @@
 name       : gnome-initial-setup
 version    : 3.24.0
-release    : 11
+release    : 12
 source     :
     - http://ftp.acc.umu.se/pub/gnome/sources/gnome-initial-setup/3.24/gnome-initial-setup-3.24.0.tar.xz : c66fadfb5ec8febaecbd81d6bf976cbf9557e9f65efd4d8e59ef712700bae554
 license    : GPL-2.0
